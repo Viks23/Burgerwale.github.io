@@ -1,0 +1,261 @@
+/* Global styles */
+* {box-sizing: border-box}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f3fff9;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+/* Header styles */
+
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+
+nav a {
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #e9ecef;
+  color: #ff9f00;
+}
+
+.login
+{
+  text-align: right;
+}
+
+.login a:hover
+{
+  // background-color: #25d366;
+  // background-color: #FFE5CC;
+  color: #25d366;
+  border-radius: 10px;
+}
+
+/* account page */
+
+/*img {
+  width: 100%;
+/*  border-radius: 10px;
+  padding-block: 0 10px;
+  margin-left: 10px;*/
+/*  position: absolute;
+}*/
+
+.account-page
+{
+  padding: 50px 0;
+  background: radial-gradient(#fff, #ffd6d6);
+  background-image: url('file:///C:/Users/Admin/OneDrive/Desktop/BurgerShop/images1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container
+{
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span
+{
+  font-weight: bold;
+  padding: 0 5px;
+  color: #555;
+  cursor: pointer;
+  width: 80px;
+  display: inline-block;
+}
+
+.form-btn
+{
+  display: inline-block;
+}
+
+.form-container form
+{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+
+form input
+{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid;
+}
+
+form .btn
+{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 15px 0;
+        border-radius: 50px;
+}
+
+form .btn:focus
+{
+  outline: none;
+}
+
+#LoginForm
+{
+  left: -300px;
+}
+
+#SignUpForm
+{
+  left: 0;
+}
+
+#Indicator
+{
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(50px);
+  transition: transform 1s;
+}
+
+.row
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2
+{
+  flex-basis: 50%;
+  min-width: 300px;
+
+}
+
+col-2 img
+{
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.btn
+{
+  display: inline-block;
+  background: #ff523b;
+  color:#fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #28a745;
+}
+
+.footer-social i {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Add social media links */
+.footer-social .fa-facebook-square {
+  color: #1877f2;
+}
+
+.footer-social .fa-twitter-square {
+  color: #1da1f2;
+}
+
+.footer-social .fa-instagram-square {
+  color: #c13584;
+}
+
+.footer-social .fa-whatsapp-square {
+  color: #25d366;
+}
+
+

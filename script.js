@@ -24,4 +24,22 @@ function showSlides() {
    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+// <!------------- js for toggle form -------------->
+
+      var LoginForm = document.getElementById("LoginForm");
+      var SignUpForm = document.getElementById("SignUpForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function SignUp()
+      {
+        SignUpForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+      }
+
+      function login()
+      {
+        SignUpForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+      }
+
 

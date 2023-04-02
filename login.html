@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Burger Shop</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+</head>
+
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+    </nav>
+     
+     <nav class = "login">
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">SignUp</a></li>
+      </ul>
+    </nav> 
+
+  </header>
+
+
+
+
+
+
+<!------------- account page -------------->
+
+<div class="account-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <!-- <img src="burger1.jpg" width="100%"> -->
+      </div> 
+
+      <div class="col-2">
+        <div class="form-container">
+          <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="SignUp()">Sign Up</span>
+            <hr id="Indicator">
+          </div>
+
+            <form id="LoginForm">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="password">
+              <button type="submit" class="btn">Login</button>
+              <a href="">Forgot password</a>
+            </form> 
+
+            <form id="SignUpForm">
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="password">              
+              <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+        </div>
+      </div> 
+
+    </div>
+  </div>
+</div>
+
+<!------------- footer -------------->
+ <footer>
+  <div class="container">
+    <p>&copy; 2023 Burger Shop</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/BurgerShop"><i class="fab fa-facebook-square"></i>Facebook</a>
+      <a href="https://twitter.com/BurgerShop"><i class="fab fa-twitter-square"></i>Twitter</a>
+      <a href="https://www.instagram.com/BurgerShop"><i class="fab fa-instagram-square"></i>Instagram</a>
+      <a href="https://wa.me/15551234567"><i class="fab fa-whatsapp-square"></i>WhatsApp</a>
+    </div>
+  </div>
+</footer>
+ 
+
+<!------------- js for toggle form -------------->
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var SignUpForm = document.getElementById("SignUpForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function SignUp()
+      {
+        SignUpForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(60px)";
+      }
+
+      function login()
+      {
+        SignUpForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+
+</body>
+
+ </html>
+
+
