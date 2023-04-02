@@ -1,0 +1,135 @@
+/* Menu Section */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: #dcdcdc;
+}
+
+.container
+{
+  position: relative;
+  width: 120px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  width: 100%;
+  background: #fff;
+
+}
+
+.imgBx
+{
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+
+
+
+.product-card img {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.product-card img:hover 
+{
+  transform: scale(1.5);
+}
+
+.content
+{
+  padding: 10px ;
+}
+
+h3
+{
+  font-size: 18px;
+  font-weight: 500;
+  color:#333;
+  margin: 5px 0;
+}
+
+/* Footer styles */
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer {
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  margin-top: 90%; 
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #28a745;
+}
+
+.footer-social i {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Add social media links */
+.footer-social .fa-facebook-square {
+  color: #1877f2;
+}
+
+.footer-social .fa-twitter-square {
+  color: #1da1f2;
+}
+
+.footer-social .fa-instagram-square {
+  color: #c13584;
+}
+
+.footer-social .fa-whatsapp-square {
+  color: #25d366;
+}
+
+
